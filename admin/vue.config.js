@@ -1,0 +1,9 @@
+module.exports = {
+  // 打包到哪个文件夹, 放进server下的admin中
+  outputDir: `${__dirname}/../server/admin`,
+
+  // 生产环境下的打包路径
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/admin/'
+    : '/'
+}
